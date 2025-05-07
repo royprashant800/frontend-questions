@@ -1,0 +1,17 @@
+#accordion {
+    max-width: 500px;
+}
+
+
+.acc-body {
+    display: none;
+}
+
+.acc-body.active {
+    display: block;
+}
+.acc-header {
+    background-color: gray;
+    margin: 4px 0px;
+    cursor: pointer;
+}
