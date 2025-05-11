@@ -8,19 +8,21 @@ const Stopwatch = () => {
     useEffect(() => {
         let intervalId;
         if(isRunning) {
-            intervalId = setInterval(() => setTime(time + 1), 10);
+            intervalId = setInterval(() => {
+                setTime((prev) => prev + 1);
+            }, 10);
         }
 
         return () => clearInterval(intervalId);
     }, [isRunning, time]);
 
-    const hours = Math.floor(time / 360000);
+  const hours = Math.floor(time / 360000);
 
-    const minutes = Math.floor((time % 360000)/6000);
+  const minutes = Math.floor((time % 360000) / 6000);
 
-    const seconds = Math.floor((time % 6000) / 100);
+  const seconds = Math.floor((time % 6000) / 100);
 
-    const milliseconds = Math.floor(time % 100);
+  const milliseconds = time % 100;
 
     const startAndStop = () => {
         setIsRunning(!isRunning);
