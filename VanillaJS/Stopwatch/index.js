@@ -35,6 +35,6 @@ startbtn.addEventListener('click', () => {
         startbtn.style.pointerEvents = 'auto';
         clearInterval(inte);
         sec = 0;
-        resetStopwatch()
+        resetStopwatch();
     })
 })

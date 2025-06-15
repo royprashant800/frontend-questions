@@ -1,4 +1,4 @@
-const currentProgressBar = document.getElementById('current-progress');
+let currentProgressBar = document.getElementById('current-progress');
 let initialProgress = 1;
 
 currentProgressBar.style.width = `${initialProgress}%`;
