@@ -27,18 +27,18 @@ data.forEach((item) => {
     accHeader.classList.add('acc-header');
     accHeader.textContent = item.title;
 
+    const accBody = document.createElement('div');
+    accBody.classList.add('acc-body');
+    accBody.textContent = item.content;
+    
+    accordionItem.appendChild(accHeader);
+    accordionItem.appendChild(accBody);
+    
+    accordionContainer.appendChild(accordionItem);
+    
     accHeader.addEventListener('click', () => {
         let content = accordionItem.querySelector('.acc-body');
         content.classList.toggle('active');
     })
-
-    const accBody = document.createElement('div');
-    accBody.classList.add('acc-body');
-    accBody.textContent = item.content;
-
-    accordionItem.appendChild(accHeader);
-    accordionItem.appendChild(accBody);
-
-    accordionContainer.appendChild(accordionItem);
 })
 

@@ -6,7 +6,7 @@ let hour = document.getElementById('hour');
 let minute = document.getElementById('minute');
 let secs = document.getElementById('secs');
 
-let sec = 0;
+let sec = 3590;
 let inte = null;
 
 const resetStopwatch = () => {
@@ -22,9 +22,9 @@ startbtn.addEventListener('click', () => {
     inte = setInterval(() => {
         sec++;
         // console.log(sec);
-        let minDisplay = Math.floor(sec / 60);
+        let minDisplay = Math.floor((sec%3600) / 60);
         let hourDisplay = Math.floor(sec / 3600);
-        let secDisplay = sec - 60 * minDisplay;
+        let secDisplay = Math.floor(sec % 60);
         
         hour.textContent = hourDisplay.toString().padStart(2, "0");
         minute.textContent = minDisplay.toString().padStart(2, "0");
