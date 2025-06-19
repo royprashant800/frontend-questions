@@ -150,7 +150,7 @@
 //   return function(...args) {
 //     if(timer) clearInterval(timer);
 //     timer = setTimeout(() => {
-//       fn();
+//       fn(...args);
 //     }, d)
 //   }
 // }
@@ -166,6 +166,7 @@
 
 // const throttle = (fun, d) => {
 //   let flag = true;
+
 //   return function() {
 //     if(flag) {
 //       fun();
@@ -300,7 +301,7 @@
 // ▶️ Promise APIs
 // all, allSettled, any, race, 
 
-function a() {
-    let b  = 30;
-}
-console.log(b);
+// function a() {
+//     let b  = 30;
+// }
+// console.log(b);
