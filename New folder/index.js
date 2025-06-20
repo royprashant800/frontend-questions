@@ -305,3 +305,15 @@
 //     let b  = 30;
 // }
 // console.log(b);
+
+// ▶️ Flatten a nested array
+let arr = ["3", ["6", ["1", "6"], ["9"]]];
+
+function flatten(arr) {
+    return arr.reduce((acc, val) =>     
+        Array.isArray(val) ? acc.concat(flatten(val)) : acc.concat(val),
+    []);
+}
+
+// console.log(flatten(arr));
+console.log(arr.flat(-4));
