@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "firstName": "Prashant",
+        "lastName": "Kumar",
+        "imageURL": "",
+        "email": "dummy@gmail.com",
+        "contact": "5678"  
+    },
+    {
+        "id": "2",
+        "firstName": "Sushant",
+        "lastName": "Kumar",
+        "imageURL": "",
+        "email": "Summy@gmail.com",
+        "contact": "567800"  
+    },
+    {
+        "id": "2",
+        "firstName": "Nishant",
+        "lastName": "Kumar",
+        "imageURL": "",
+        "email": "Nummy@gmail.com",
+        "contact": "567899"  
+    }
+]
