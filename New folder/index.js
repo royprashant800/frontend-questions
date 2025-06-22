@@ -112,15 +112,15 @@
 // let multiplyByTwo = multiply(2);
 // multiplyByTwo(6);
 
-// Infinite Currying
-// function add(a) {
-//   return function(b) {
-//     if(b) return add(a + b);
-//     return a;
-//   }
-// }
+// ▶️Infinite Currying
+function add(a) {
+  return function(b) {
+    if(b) return add(a + b);
+    return a;
+  }
+}
 
-// console.log(add(2)(3)(1)(3)(5)());
+console.log(add(2)(3)(1)(3)(5)());
 
 // ▶️Event bubbling/Capturing
 // document.querySelector('#grandparent')
@@ -307,13 +307,13 @@
 // console.log(b);
 
 // ▶️ Flatten a nested array
-let arr = ["3", ["6", ["1", "6"], ["9"]]];
+// let arr = ["3", ["6", ["1", "6"], ["9"]]];
 
-function flatten(arr) {
-    return arr.reduce((acc, val) =>     
-        Array.isArray(val) ? acc.concat(flatten(val)) : acc.concat(val),
-    []);
-}
+// function flatten(arr) {
+//     return arr.reduce((acc, val) =>     
+//         Array.isArray(val) ? acc.concat(flatten(val)) : acc.concat(val),
+//     []);
+// }
 
 // console.log(flatten(arr));
-console.log(arr.flat(-4));
+// console.log(arr.flat(-4));
