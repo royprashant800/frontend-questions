@@ -1,0 +1,9 @@
+.folder {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+.file {
+  display: flex;
+  flex-direction: column;
+}
