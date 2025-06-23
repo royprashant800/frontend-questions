@@ -1,0 +1,13 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.otp-input {
+  height: 40px;
+  width: 50px;
+  font-size: 30px;
+  text-align: center;
+  margin: 4px;
+}
